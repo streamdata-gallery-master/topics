@@ -49,7 +49,7 @@ apis:
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/xignite/getcategoriesandtopics-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/xignite/gettopics-post.md
 x-common:
 - type: x-net-sdk
   url: http://xignite.github.io/DotNetSDK/
