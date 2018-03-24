@@ -22,8 +22,8 @@ tags:
 - Issues
 - Indie EdTech Data Jam
 - Facebook Stack
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/facebook/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -36,7 +36,7 @@ apis:
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/facebook/place-topic-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/facebook/place-topic-id-get.md
 x-common:
 - type: x-android-sdk
   url: https://developers.facebook.com/docs/android/share
