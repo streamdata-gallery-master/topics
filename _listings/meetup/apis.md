@@ -28,7 +28,7 @@ apis:
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/meetup/recommended-group-topics-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/meetup/find-topics-get.md
 x-common:
 - type: x-base
   url: http://api.meetup.com
