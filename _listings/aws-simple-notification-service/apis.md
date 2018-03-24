@@ -19,8 +19,8 @@ tags:
 - Notifications
 - Messaging
 - Amazon Web Services
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-simple-notification-service/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -34,7 +34,7 @@ apis:
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-simple-notification-service/action-settopicattributes-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-simple-notification-service/action-createtopic-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-SN
