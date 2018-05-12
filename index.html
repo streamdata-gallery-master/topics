@@ -1,27 +1,61 @@
 ---
 layout: default
-title: Streamdata.io API Gallery - Topics
+title: Streamdata.io API Gallery
 ---
 
-{% assign listing_object = site.listings %}
-{% assign tag_slug = "listings" %}
-{% assign listing_type = "topic" %}
+<style>
+  .topiccenter {
+      margin: auto;
+      width: 50%;
+      border: 0px solid #FFF;
+      padding: 10px;
+  }
+  .topiccenter ul{
+    width:760px;
+    overflow:hidden;
+  }
+  .topiccenter ul li{
+    line-height:1.5em;
+    float:left;
+    display:inline;
+  }
+  #double li  { width:50%;}
+  #triple li  { width:33.333%; }
+  #quad li    { width:25%; }
+  #six li     { width:16.666%; }
+</style>
+
+{% assign path_count = 0 %}
+{% assign topics = site.data.topics | sort: 'label' %}
+{% for topic in topics %}
+  {% assign path_count = path_count | plus: topic.paths %}
+{% endfor %}
+
+{% assign topic_count = 0 %}
+{% assign topics = site.data.topics | sort: 'label' %}
+{% for topic in topics %}
+  {% assign topic_count = topic_count | plus: 1 %}
+{% endfor %}
+
+{% assign org_count = 0 %}
+{% assign organizations = site.data.organizations | sort: 'label' %}
+{% for organization in organizations %}
+  {% assign org_count = org_count | plus: 1 %}
+{% endfor %}
 
 <div class="shortMasthead  shortMasthead--extra-top-padding ">
-     {% include api-listing-feature.html %}
+  <h1 class="shortMasthead__headline enterAnimation enterAnimation--active" data-enter-animation="">{{ page.title }}</h1>
+  <p align="center"><strong>{{ org_count }} entities with {{ path_count }} API paths spanning {{ topic_count }} topics</strong></p>
 </div>
 
-<section class="taggedLinkCards">
+<div id="topicList" style="display: none;">
 
-   {% include api-tag-filter.html %}
+  <div class="topiccenter">
+    <ul id="triple" style="padding-top: 10px; padding-left: 20px;">
+      {% for topic in topics %}
+        <li>&rarr; <a href="{{ topic.url }}" target="_blank">{{ topic.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 
-   {% include api-listing.html %}
-
-</section>
-<div class="submitApi__overflowContainer" data-submit-api="">
-   <div class="submitApi submitApi--left-hand-image">
-
-     {% include api-listing-submit.html %}
-
-   </div>
 </div>
