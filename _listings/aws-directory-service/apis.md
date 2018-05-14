@@ -24,16 +24,15 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-directory-service/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Directory Service API Describe Event Topics
-  description: Obtains information about which SNS topics receive status messages
-    from the specified directory.
+- name: AWS Directory Service API Register Event Topic
+  description: Associates a directory with an SNS topic.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AWSDirectoryService.png
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: http:://{host}//
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-directory-service/action-describeeventtopics-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-directory-service/action-registereventtopic-get.md
 x-common:
 - type: x-command-line-interface
   url: http://docs.aws.amazon.com/cli/latest/reference/ds/index.html
