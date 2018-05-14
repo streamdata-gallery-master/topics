@@ -24,15 +24,15 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-simple-notification-service/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Simple Notification Service API Get Topic Attributes
-  description: Returns all of the properties of a topic.
+- name: AWS Simple Notification Service API List Topics
+  description: Returns a list of the requester's topics.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Mobile-Services_AmazonSNS.png
   humanURL: https://aws.amazon.com/sns/
   baseURL: http:://{host}//
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-simple-notification-service/action-gettopicattributes-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/aws-simple-notification-service/action-listtopics-get.md
 x-common:
 - type: x-change-log
   url: http://aws.amazon.com/releasenotes/Amazon-SN
