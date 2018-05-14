@@ -20,15 +20,17 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/datagov/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Data.gov API Add Topics
-  description: Create a topic
+- name: Data.gov API Delete Topics Topic
+  description: Delete a given topic
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
   baseURL: https://catalog.data.gov//api/3/
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/datagov/topics-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/datagov/topics-topic-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/datagov/topics-topic-delete-postman.md
 x-common:
 - type: x-blog
   url: https://www.data.gov/meta/
