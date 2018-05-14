@@ -18,17 +18,17 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Azure Service Bus API Topics Get
-  description: Returns a description for the specified topic.
+- name: Azure Service Bus API Topics List Authorization Rules
+  description: Gets authorization rules for a topic.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-service-bus-anything.png
   humanURL: https://azure.microsoft.com/en-us/services/service-bus/
   baseURL: http:://management.azure.com//
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-authorizationrules-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-authorizationrules-get-postman.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/service-bus/
