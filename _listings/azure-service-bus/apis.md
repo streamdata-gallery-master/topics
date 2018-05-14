@@ -29,7 +29,28 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-authorizationrules-authorizationrulename-get.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-authorizationrules-authorizationrulename-get-postman.md
+- name: Azure Service Bus API Topics Delete Authorization Rule
+  description: Deletes a topic authorization rule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-service-bus-anything.png
+  humanURL: https://azure.microsoft.com/en-us/services/service-bus/
+  baseURL: http:://management.azure.com//
+  tags: Topics
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-authorizationrules-authorizationrulename-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/azure-service-bus/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-servicebus-namespaces-namespacename-topics-topicname-authorizationrules-authorizationrulename-delete-postman.md
 x-common:
+- type: x-documentation
+  url: https://docs.microsoft.com/en-us/azure/service-bus/
+- type: x-pricing
+  url: https://azure.microsoft.com/en-us/pricing/details/service-bus/
+- type: x-service-level-agreements
+  url: https://azure.microsoft.com/en-us/support/legal/sla/service-bus/
+- type: x-status
+  url: https://azure.microsoft.com/en-us/status/
+- type: x-website
+  url: https://azure.microsoft.com/en-us/services/service-bus/
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/service-bus/
 - type: x-pricing
