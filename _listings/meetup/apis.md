@@ -19,16 +19,15 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/meetup/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Meetup Recommend Group Topics
-  description: Recommends suggestions for group topics based on a text search or other
-    topics
+- name: Meetup Find Topics
+  description: Find topics by name
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Meetup-Logo-1-med1.jpg
   humanURL: http://www.meetup.com/
   baseURL: https://api.meetup.com//
   tags: Topics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/meetup/recommended-group-topics-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/topics/master/_listings/meetup/find-topics-get.md
 x-common:
 - type: x-base
   url: http://api.meetup.com
