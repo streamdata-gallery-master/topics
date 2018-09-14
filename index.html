@@ -3,6 +3,41 @@ layout: default
 title: Streamdata.io API Gallery - Topics
 ---
 
+
+<style>
+
+ .topiclisting {
+   width:100%;
+   height: 1000px;
+   overflow: auto;
+ }
+
+ .topiclisting ul{
+
+ }
+ .topiclisting ul li{
+   line-height:1.5em;
+   float:left;
+   display:inline;
+ }
+
+ .organizationlisting {
+   width:100%;
+   height: 350px;
+   overflow: auto;
+ }
+ .organizationlisting ul{
+ }
+ .organizationlisting ul li{
+   line-height:1.5em;
+ }
+
+ #double li  { width:50%;}
+ #triple li  { width:33.333%; }
+ #quad li    { width:25%; }
+ #six li     { width:16.666%; }
+</style>
+
 {% assign listing_object = site.listings %}
 {% assign tag_slug = "listings" %}
 {% assign listing_type = "topic" %}
@@ -11,13 +46,51 @@ title: Streamdata.io API Gallery - Topics
      {% include api-listing-feature.html %}
 </div>
 
-<section class="taggedLinkCards">
+{% assign path_count = 0 %}
+{% assign topics = site.data.topics | sort: 'label' %}
+{% for topic in topics %}
+  {% assign path_count = path_count | plus: topic.paths %}
+{% endfor %}
 
-   {% include api-tag-filter.html %}
+{% assign topic_count = 0 %}
+{% assign topics = site.data.topics | sort: 'label' %}
+{% for topic in topics %}
+  {% assign topic_count = topic_count | plus: 1 %}
+{% endfor %}
 
-   {% include api-listing.html %}
+{% assign org_count = 0 %}
+{% assign organizations = site.data.organizations | sort: 'label' %}
+{% for organization in organizations %}
+  {% assign org_count = org_count | plus: 1 %}
+{% endfor %}
 
+<section class="imageMasthead imageMasthead--content-left">
+  <div class="imageMasthead__content-side">
+    <div class="imageMasthead__content-container">
+      <div class="imageMasthead__content-wrap">
+        <h1 class="imageMasthead__heading enterAnimation" data-enter-animation>API Gallery Topics</h1>
+        <h2 class="imageMasthead__subheading enterAnimation" data-enter-animation>We've broken down {{ path_count }} API paths into <a href="http://topics.api.gallery.streamdata.io/">{{ topic_count }} topics</a>.</h2>
+        <div class="imageMasthead__body enterAnimation" data-enter-animation>
+
+          <div class="topiclisting">
+            <ul id="double" style="padding-top: 10px; padding-left: 20px;">
+              {% for topic in topics %}
+                <li>&rarr; <a href="{{ topic.url }}" target="_blank">{{ topic.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="imageMasthead__image-side enterAnimation" data-enter-animation>
+    <div class="imageMasthead__image-wrap">
+      <a href="http://topics.api.gallery.streamdata.io/"><img src="/assets/streamdata-api-gallery-topics.png" alt="" class="imageMasthead__image"></a>
+    </div>
+  </div>
 </section>
+
 <div class="submitApi__overflowContainer" data-submit-api="">
    <div class="submitApi submitApi--left-hand-image">
 
